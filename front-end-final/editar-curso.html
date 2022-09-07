@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <title>Editar Cursos</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a href="./home-sistema.html">Home - Sistema</a>
+        <a href="./curso.html">Cursos</a>
+    </nav>
+
+    <h1>Editar Cursos</h1><br>
+
+    <div class="container">
+
+        <form action="./editar-curso.html">
+            <legend>Edite um curso</legend><br><br>
+
+            <form id="editar-curso" action="./editar-curso.html">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nome do Curso</span>
+                    </div>
+                    <input type="text" class="form-control editar_curso_nome" aria-label="curso" aria-describedby="editar_curso_nome"
+                    >
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Duração</span>
+                    </div>
+                    <input type="number" class="form-control editar_curso_duracao" aria-label="duracao"
+                        aria-describedby="editar_curso_duracao">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Instituição</span>
+                    </div>
+                    <input type="text" class="form-control editar_curso_instituicao" aria-label="instituicao"
+                        aria-describedby="editar_curso_instituicao">
+                </div>
+
+                <button type="button" class="btn btn-secondary cursoEditar">Editar Curso</button><br><br>
+            </form>
+
+    </div>
+
+    <script src="js/editar-curso.js"></script>
+
+
+</body>
+
+</html>
